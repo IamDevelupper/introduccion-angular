@@ -17,7 +17,7 @@ dd {
   font-weight: bold;
 }
 
-button {
+button, .button{
   background-color: black;
   border-radius: 5px;
   border: 0px;
@@ -38,4 +38,30 @@ button:focus{
 
 .p-1 {
   padding: 1px;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.col {
+  flex-grow: 1;
+
+  ul {
+    list-style: none;
+  }
+}
+
+input {
+  display: block;
+  margin: 0.5rem;
+}
+
+.mensaje {
+  background-color: red;
+  display: inline;
+  padding: 0.3rem;
+  color: white;
+  
 }

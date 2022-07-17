@@ -1,0 +1,26 @@
+<h3>Agregar</h3>
+<hr />
+
+<!--<form (submit)="agregar($event)">    sirve para obtener el eveto-->
+<form (ngSubmit)="agregar()">
+  <input 
+    type="text"
+    placeholder="Nombre" 
+    name="nombre"
+    [(ngModel)]="personaje.nombre"
+    (input)="checkName()"
+  />
+    <p *ngIf="nm" class="mensaje">Nombre Incorrecto</p>
+
+  <input 
+    type="number" 
+    placeholder="Poder" 
+    name="poder"
+    [(ngModel)]="personaje.poder"
+    (input)="checkPower( $event )"
+  />
+    <p *ngIf="pd" class="mensaje">Poder Incorrecto</p>
+
+  <input class="button" type="submit" value="Agregar" />
+</form>
+
